@@ -1,0 +1,13 @@
+$gray: #F2F2F2;
+$green: #006B3F;
+$dark_gray: #333333;
+
+.flex-items-center {
+  display: flex;
+  align-items: center;
+}
+
+a:hover {
+  color: $gray;
+  text-decoration: none;
+}

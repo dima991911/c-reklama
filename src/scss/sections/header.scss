@@ -1,0 +1,68 @@
+.header {
+  background-image: url("../image/background.jpg");
+  background-size: cover;
+
+  &-top {
+    background: $gray;
+    padding: 15px 0;
+    box-shadow: 0px 10px 20px 0px rgba(43,43,43,1);
+  }
+}
+
+.header-background {
+  text-align: center;
+  padding: 50px 0;
+
+  &__h1 {
+    color: $gray;
+    line-height: 1.2;
+    text-transform: uppercase;
+    font-weight: bold;
+    text-shadow: 0px 3px 3px rgba(5, 5, 5, 0.8);
+
+    &_lowercase {
+      display: block;
+      text-transform: none;
+      font-weight: normal;
+    }
+  }
+
+  &__order {
+    margin-top: 30px;
+    padding: 5px 15px;
+    color: $gray;
+    background: $green;
+    letter-spacing: 2px;
+    border: 3px solid $gray;
+    border-radius: 15px;
+    font-weight: bold;
+    box-shadow: 0px 0px 10px 0px rgba(43,43,43,1);
+    cursor: pointer;
+  }
+}
+
+.navigation {
+  background: $dark_gray;
+
+  &-container {
+    font-size: 0;
+    &-item {
+      display: inline-block;
+      padding: 10px 80px;
+      margin: 0;
+      font-size: 16px;
+      background: none;
+      color: $gray;
+      transition: 0.2s;
+
+      &:hover {
+        background: $green;
+      }
+    }
+  }
+}
+
+.active {
+  background: $green;
+  font-weight: bold;
+}
