@@ -2,6 +2,19 @@ $gray: #F2F2F2;
 $green: #006B3F;
 $dark_gray: #333333;
 
+html {
+  font-size: 16px;
+}
+
+body {
+  background: $gray;
+}
+
+.wrapper {
+  width: 960px;
+  margin: 0 auto;
+}
+
 .flex-items-center {
   display: flex;
   align-items: center;

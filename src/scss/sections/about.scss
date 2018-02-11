@@ -1,0 +1,91 @@
+/*Section about(index.page)*/
+
+.content {
+  background: $gray;
+  color: $dark_gray;
+  padding: 40px 0;
+  z-index: 1000;
+}
+
+.about {
+  margin-bottom: 50px;
+
+  &__h2 {
+    font-size: 32px;
+    text-align: center;
+    text-transform: uppercase;
+    margin-bottom: 15px;
+  }
+
+  p {
+    font-size: 20px;
+    line-height: 1.3;
+  }
+
+  &-works {
+    font-size: 20px;
+
+    li {
+      color: $green;
+
+      span {
+        color: $dark_gray;
+      }
+    }
+  }
+}
+
+.why {
+  margin-bottom: 50px;
+
+  &__h2 {
+    font-size: 32px;
+    text-align: center;
+    text-transform: uppercase;
+    margin-bottom: 35px;
+  }
+
+  &-item {
+    text-align: center;
+    margin-bottom: 20px;
+    padding: 0 30px;
+
+    h5 {
+      font-size: 22px;
+      color: $green;
+      font-weight: bold;
+      margin-bottom: 5px;
+    }
+
+    p {
+      line-height: 1.3;
+    }
+  }
+}
+
+.partners {
+  &__h2 {
+    font-size: 32px;
+    text-align: center;
+    text-transform: uppercase;
+    margin-bottom: 35px;
+  }
+
+  .owl-carousel {
+    div {
+      background: $gray;
+      color: $dark_gray;
+      text-align: center;
+
+      img {
+        margin: 0 auto;
+        width: inherit;
+      }
+    }
+  }
+
+  .owl-carousel .owl-stage {
+    display: flex;
+    align-items: center;
+  }
+}

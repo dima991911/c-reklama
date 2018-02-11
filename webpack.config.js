@@ -11,6 +11,7 @@ var fonts = require('./config-webpack/fonts');
 
 var common = merge([
     {
+        devtool: 'inline-source-map',
         entry: {
             'index': './src/js/app.js',
             'blog': './src/js/blog.js'
@@ -33,6 +34,11 @@ var common = merge([
             new webpack.optimize.CommonsChunkPlugin({
                 name: 'common',
                 filename: "js/commons.js"
+            }),
+            new webpack.ProvidePlugin({
+                $: "jquery",
+                jQuery: "jquery",
+                "window.jQuery": "jquery"
             })
         ]
     },
