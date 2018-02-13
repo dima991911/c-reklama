@@ -1,0 +1,25 @@
+.footer {
+  padding: 25px 0;
+  padding-bottom: 0;
+  background: $dark_gray;
+  color: $gray;
+
+  &-info-item {
+    font-size: 18px;
+    margin-bottom: 20px;
+
+    i {
+      display: inline-block;
+      margin-right: 10px;
+      font-size: 22px;
+    }
+  }
+
+  &-copyright {
+    text-align: center;
+    font-size: 16px;
+    margin-top: 10px;
+    font-weight: bold;
+    padding-bottom: 5px;
+  }
+}

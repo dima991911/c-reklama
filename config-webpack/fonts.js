@@ -3,7 +3,7 @@ module.exports = function () {
         module: {
             rules: [
                 {
-                    test: /\.(woff|woff2|eot|ttf)$/,
+                    test: /.(svg|woff|woff2|eot|ttf|otf)(\?.*$|$)/,
                     exclude: /node_modules/,
                     use: [
                         {
