@@ -13,8 +13,7 @@ var common = merge([
     {
         devtool: 'inline-source-map',
         entry: {
-            'index': './src/js/app.js',
-            'blog': './src/js/blog.js'
+            'index': './src/js/app.js'
         },
         output: {
             filename: 'js/[name].bundle.js',
@@ -27,9 +26,14 @@ var common = merge([
                 template: 'src/index.html'
             }),
             new HtmlWebpackPlugins({
-                filename: 'blog.html',
-                chunks: ['blog', 'common'],
-                template: 'src/blog.html'
+                filename: 'portfolio.html',
+                chunks: ['index', 'common'],
+                template: 'src/portfolio.html'
+            }),
+            new HtmlWebpackPlugins({
+                filename: 'contacts.html',
+                chunks: ['index', 'common'],
+                template: 'src/contacts.html'
             }),
             new webpack.optimize.CommonsChunkPlugin({
                 name: 'common',

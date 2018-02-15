@@ -1,0 +1,213 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+<body>
+
+<section class="header">
+    <div class="header-top">
+        <div class="container">
+            <div class="row flex-items-center">
+                <div class="col-md-6">
+                    <img src="image/logo.png" alt="Alt">
+                </div>
+                <div class="offset-md-3 col-md-3 header-mobile">
+                    <div><i class="fa fa-mobile"></i><a>(067)672-42-04</a></div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="header-background">
+        <h1 class="header-background__h1">Зовнішня реклама<span class="header-background__h1_lowercase">у Львові та області</span></h1>
+        <button class="header-background__order">ЗАМОВИТИ</button>
+    </div>
+</section>
+
+<div class="navigation">
+    <div class="container">
+        <nav class="navigation-container">
+            <a href="/" class="navigation-container-item">ГОЛОВНА</a>
+            <a href="#" class="navigation-container-item">ПОСЛУГИ</a>
+            <a href="/portfolio.html" class="navigation-container-item">ПОРТФОЛІО</a>
+            <a href="/contacts.html" class="navigation-container-item active">КОНТАКТИ</a>
+        </nav>
+    </div>
+</div>
+
+<main class="content">
+
+    <section class="contacts">
+        <h2 class="contacts__h2">НАШІ КОНТАКИ</h2>
+        <div class="container">
+            <div class="row">
+                <div class="col-md-6">
+                    <form class="contacts-form">
+                        <div class="contacts-form__group" data-valid="text|required">
+                            <input type="text" name="name" placeholder="Контактна особа" class="contacts-form__input">
+                            <p class="contacts-form__error">Будь ласка, ведіть ім'я</p>
+                        </div>
+                        <div class="contacts-form__group" data-valid="num|required">
+                            <input type="text" name="phone" placeholder="Контактний телефон" class="contacts-form__input">
+                            <p class="contacts-form__error">Будь ласка, ведіть ім'я</p>
+                        </div>
+                        <div class="contacts-form__group" data-valid="email">
+                            <input type="text" name="email" placeholder="Електрона адрсеа" class="contacts-form__input">
+                            <p class="contacts-form__error">Будь ласка, ведіть ім'я</p>
+                        </div>
+                        <textarea name="message" class="contacts-form__textarea" placeholder="Повідомлення"></textarea>
+
+                        <input type="submit" value="ВІДПРВИТИ" class="contacts-form__submit">
+                        <p class="contacts-form__success">
+                            Форма успішно відправилась
+                        </p>
+                    </form>
+                </div>
+
+                <div class="offset-md-1 col-md-5">
+
+                    <div class="contacts-item">
+                        <div class="row flex-items-center">
+                            <div class="col-md-2 col-3 contacts-item__icon">
+                                <i class="fa fa-fax"></i>
+                            </div>
+                            <div class="col-md-10 col-9">
+                                +38 (032) 244 48 62
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="contacts-item">
+                        <div class="row flex-items-center">
+                            <div class="col-md-2 col-3 contacts-item__icon">
+                                <i class="fa fa-mobile"></i>
+                            </div>
+                            <div class="col-md-10 col-9">
+                                +38 (067) 672 42 04 - Володимир
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="contacts-item">
+                        <div class="row flex-items-center">
+                            <div class="col-md-2 col-3 contacts-item__icon">
+                                <i class="fa fa-mobile"></i>
+                            </div>
+                            <div class="col-md-10 col-9">
+                                +38 (097) 579 57 10 - Ігор
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="contacts-item">
+                        <div class="row flex-items-center">
+                            <div class="col-md-2 col-3 contacts-item__icon">
+                                <i class="fa fa-envelope" aria-hidden="true"></i>
+                            </div>
+                            <div class="col-md-10 col-9">
+                                creklamy@gmail.com
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="contacts-item">
+                        <div class="row flex-items-center">
+                            <div class="col-md-2 col-3 contacts-item__icon">
+                                <i class="fa fa-facebook-square" aria-hidden="true"></i>
+                            </div>
+                            <div class="col-md-10 col-9">
+                                www.fb.com/creklamy
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="contacts-item">
+                        <div class="row flex-items-center">
+                            <div class="col-md-2 col-3 contacts-item__icon">
+                                <i class="fa fa-clock-o"></i>
+                            </div>
+                            <div class="col-md-10 col-9">
+                                ПН - ПТ  :  10:00 - 18:00
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="location">
+        <h2 class="location__h2">НАША АДРЕСА</h2>
+        <div class="container">
+            <div class="row location-wrapper">
+                <div class="location-background">
+
+                </div>
+                <div class="col-md-12 location-map" id="google-map">
+
+                </div>
+            </div>
+        </div>
+    </section>
+
+</main>
+
+<footer class="footer">
+    <div class="container">
+        <div class="row">
+            <div class="col-md-4 footer-info-item">
+                <i class="fa fa-home"></i>
+                79035 м. Львів, вул. Зелена, 143б
+            </div>
+            <div class="col-md-4 footer-info-item">
+                <i class="fa fa-fax"></i>
+                +38 (032) 244 48 62
+            </div>
+            <div class="col-md-4 footer-info-item">
+                <i class="fa fa-mobile"></i>
+                +38 (067) 672 42 04
+            </div>
+            <div class="col-md-4 footer-info-item">
+                <i class="fa fa-clock-o"></i>
+                ПН - ПТ  :  10:00 - 18:00
+            </div>
+            <div class="col-md-4 footer-info-item">
+                <i class="fa fa-envelope" aria-hidden="true"></i>
+                creklamy@gmail.com
+            </div>
+            <div class="col-md-4 footer-info-item">
+                <i class="fa fa-facebook-square" aria-hidden="true"></i>
+                www.fb.com/creklamy
+            </div>
+            <div class="col-md-12 footer-copyright">
+                ТзОВ «Центр реклами» - 2017
+            </div>
+        </div>
+    </div>
+</footer>
+
+<script>
+    function initMap() {
+        let url = new google.maps.LatLng(42.047711, 3.174757);
+        let map = new google.maps.Map(document.getElementById('google-map'), {
+            zoom: 16,
+            center: url,
+            mapTypeId: 'satellite'
+        });
+        let marker = new google.maps.Marker({
+            position: url,
+            map: map,
+            animation: google.maps.Animation.BOUNCE
+        });
+    };
+</script>
+
+<script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBg6JLwD2IDEAXP3tHtRsAbzyAZhkaYkdk&callback=initMap"></script>
+
+</body>
+</html>
