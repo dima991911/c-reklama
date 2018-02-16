@@ -1,14 +1,18 @@
 .portfolio {
   &__h2 {
-    font-size: 32px;
+    font-size: 2rem;
     text-align: center;
     text-transform: uppercase;
-    margin-bottom: 15px;
+    margin-bottom: 0.9375rem;
   }
 
   &-item {
-    padding: 0 10px;
-    margin-bottom: 20px;
+    padding: 0 0.625rem;
+    margin-bottom: 1.25rem;
+
+    @media screen and(max-width: 576px) {
+      padding: 0 1rem;
+    }
 
     img {
       width: 100%;

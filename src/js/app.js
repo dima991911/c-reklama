@@ -34,17 +34,38 @@ let Index = (function () {
         $(window).on('load', function () {
             coordinateMenu = $('.navigation').offset();
         });
+        $(window).resize(function () {
+            let menu = $('.navigation'),
+                menuItem = $('.navigation-container');
+
+            if($(window).width() > 670) {
+                menu.removeClass('navigation-fixed');
+                menuItem.show();
+            }
+        });
         $('.contacts-form').submit(formSubmit);
         $(window).scroll(scrollWindow);
+        $('.navigation-hamburger').click(hamburgerClick);
     };
 
     let coordinateMenu;
+
+    let hamburgerClick = function (event) {
+        let menu = $('.navigation-container');
+
+        if(menu.is(':visible')) {
+            menu.slideUp(200);
+        }
+        if(menu.is(':hidden')){
+            menu.slideDown(200);
+        }
+    };
 
     let scrollWindow = function (event) {
         let menu = $('.navigation'),
             coordinateWindow = $(window).scrollTop();
 
-        if($(window).width() <= 560) {
+        if($(window).width() <= 670) {
             if (coordinateWindow > coordinateMenu.top) {
                 menu.addClass('navigation-fixed');
             } else {

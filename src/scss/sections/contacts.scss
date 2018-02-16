@@ -1,28 +1,28 @@
 .contacts {
   &__h2 {
-    font-size: 32px;
+    font-size: 2rem;
     text-align: center;
     text-transform: uppercase;
-    margin-bottom: 15px;
+    margin-bottom: 0.9375rem;
   }
 
   &-form {
     &__group {
-      margin-bottom: 10px;
+      margin-bottom: 0.625rem;
     }
 
     &__input {
-      padding: 5px 10px;
+      padding: 0.3125rem 0.625rem;
       width: 100%;
-      margin-bottom: 5px;
-      border: 3px solid $green;
+      margin-bottom: 0.3125rem;
+      border: 0.1875rem solid $green;
     }
 
     &__textarea {
-      padding: 5px 10px;
+      padding: 0.3125rem 0.625rem;
       width: 100%;
-      height: 150px;
-      border: 3px solid $green;
+      height: 9.375rem;
+      border: 0.1875rem solid $green;
     }
 
     &__error {
@@ -34,51 +34,51 @@
       color: $gray;
       background: darken($green, 10%);
       border: none;
-      padding: 5px 15px;
-      margin-top: 10px;
+      padding: 0.3125rem 0.9375rem;
+      margin-top: 0.625rem;
       display: block;
       font-weight: bold;
-      letter-spacing: 2px;
+      letter-spacing: 0.125rem;
       cursor: pointer;
     }
 
     &__success {
       display: none;
-      margin-top: 5px;
+      margin-top: 0.3125rem;
       color: $green;
     }
   }
 
   &-item {
-    margin-bottom: 20px;
-    font-size: 20px;
+    margin-bottom: 1.25rem;
+    font-size: 1.25rem;
 
     &__icon {
       text-align: center;
-      font-size: 26px;
+      font-size: 1.625rem;
       color: $green;
     }
   }
 }
 
 .location {
-  margin-top: 50px;
+  margin-top: 3.125rem;
   &__h2 {
-    font-size: 32px;
+    font-size: 2rem;
     text-align: center;
     text-transform: uppercase;
-    margin-bottom: 15px;
+    margin-bottom: 0.9375rem;
   }
 
   &-map {
-    border: 3px solid $green;
+    border: 0.1875 solid $green;
     margin: 0 auto;
     z-index: 1000;
   }
 
   &-wrapper {
     position: relative;
-    min-height: 300px;
+    min-height: 18.75rem;
   }
 
   &-background {
@@ -86,7 +86,7 @@
     top: 0;
     left: 0;
     height: 100%;
-    width: 200px;
+    width: 12.5rem;
     background: rgba(0,107,63,0.6);
     z-index: 1001;
   }

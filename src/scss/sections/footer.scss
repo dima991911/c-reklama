@@ -1,25 +1,25 @@
 .footer {
-  padding: 25px 0;
+  padding: 1.5625rem 0;
   padding-bottom: 0;
   background: $dark_gray;
   color: $gray;
 
   &-info-item {
-    font-size: 18px;
-    margin-bottom: 20px;
+    font-size: 1.125rem;
+    margin-bottom: 1.25rem;
 
     i {
       display: inline-block;
-      margin-right: 10px;
-      font-size: 22px;
+      margin-right: 0.625rem;
+      font-size: 1.375rem;
     }
   }
 
   &-copyright {
     text-align: center;
-    font-size: 16px;
-    margin-top: 10px;
+    font-size: 1rem;
+    margin-top: 0.625rem;
     font-weight: bold;
-    padding-bottom: 5px;
+    padding-bottom: 0.3125rem;
   }
 }

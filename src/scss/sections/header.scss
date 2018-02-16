@@ -4,30 +4,30 @@
 
   &-mobile {
     text-align: right;
-    font-size: 20px;
+    font-size: 1.25rem;
     font-weight: bold;
 
     i {
       vertical-align: middle;
-      font-size: 30px;
+      font-size: 1.875rem;
     }
 
     a {
-      margin-left: 10px;
+      margin-left: 0.625rem;
       font-weight: normal;
     }
   }
 
   &-top {
     background: $gray;
-    padding: 10px 0;
+    padding: 0.625rem 0;
     box-shadow: 0px 10px 20px 0px rgba(43,43,43,1);
   }
 }
 
 .header-background {
   text-align: center;
-  padding: 50px 0;
+  padding: 3.125rem 0;
 
   &__h1 {
     color: $gray;
@@ -44,13 +44,13 @@
   }
 
   &__order {
-    margin-top: 30px;
-    padding: 3px 15px;
+    margin-top: 1.875rem;
+    padding: 0.1875rem 0.9375rem;
     color: $gray;
     background: $green;
-    letter-spacing: 2px;
-    border: 3px solid $gray;
-    border-radius: 13px;
+    letter-spacing: 0.125rem;
+    border: 0.1875rem solid $gray;
+    border-radius: 0.8125rem;
     font-weight: bold;
     box-shadow: 0px 0px 10px 0px rgba(43,43,43,1);
     cursor: pointer;
@@ -68,11 +68,24 @@
   box-shadow: 0px -1px 20px 0px rgba(43,43,43,1);
   width: 100%;
 
+  &-fluid {
+    @media screen and(max-width: 670px){
+      max-width: 100%;
+      padding: 0;
+    }
+  }
+
   &-hamburger {
+    display: none;
     color: $gray;
-    font-size: 34px;
+    font-size: 2.125rem;
     text-align: right;
     cursor: pointer;
+
+    @media screen and(max-width: 670px){
+      display: block;
+      padding: 0 0.9375rem;
+    }
   }
 
   &-fixed {
@@ -84,22 +97,26 @@
   &-container {
     font-size: 0;
 
-    @media screen and(max-width: 560px){
+    @media screen and(max-width: 670px){
       display: none;
     }
 
     &-item {
       display: inline-block;
-      padding: 10px 80px;
+      padding: 0.625rem 3.125rem;
       margin: 0;
-      font-size: 16px;
+      font-size: 1rem;
       background: none;
       color: $gray;
       transition: 0.2s;
 
-      @media screen and(max-width: 560px){
+      @media screen and(max-width: 995px){
+        padding: 0.625rem 1.875rem;
+      }
+
+      @media screen and(max-width: 670px){
         display: block;
-        padding: 10px;
+        padding: 0.625rem;
       }
 
       &:hover {
